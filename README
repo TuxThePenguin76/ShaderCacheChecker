@@ -1,0 +1,2 @@
+The new Steam UI is lovely on linux but the information on which shaders are being compiled seems to have gone missing.
+I have written a small shell script to look at the current running processes and look up the Application/Game name using the steam API
