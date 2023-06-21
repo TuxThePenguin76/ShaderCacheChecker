@@ -49,7 +49,7 @@ fi
 
 # Use that ID to scrape the name of the game
 
-APPNAME=$( $CURL -L http://store.steampowered.com/api/appdetails?appids=$STEAMID  | $JQ --arg steamkey "$STEAMID" '.["\($steamkey)"].data.name' )
+APPNAME=$( $CURL -s -L http://store.steampowered.com/api/appdetails?appids=$STEAMID  | $JQ --arg steamkey "$STEAMID" '.["\($steamkey)"].data.name' )
 
 
 echo "$APPNAME is currently having its Vulcan Shaders compiled"
